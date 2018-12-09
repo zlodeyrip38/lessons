@@ -13,7 +13,7 @@ function login($data)
   
   if($authorized)
   {
-      echo "Добпро пожаловать на сайт, ".$authorized;
+      echo "Добро пожаловать на сайт, ".$authorized;
   }
   else
   {
