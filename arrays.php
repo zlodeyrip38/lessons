@@ -1,4 +1,6 @@
 <?php
+require_once "header.php";
+
 /*$fruits [] = "бананы";
 $fruits [] = "апельсины";
 $fruits [] = "яблоки";*/
@@ -15,3 +17,5 @@ foreach ($y as $key => $value  )
 {
     echo  $value ;
 }
+
+require_once "footer.php";
