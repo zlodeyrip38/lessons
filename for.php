@@ -1,17 +1,21 @@
 <?php
 require_once "header.php";
 ?>
-    <form method="post">
-        число от
-        <input type="text" name="start">
-        до
-        <input type="text" name="end">
+    <form class="form-inline" role="form" method="post">
+        <div class="form-group">
+        <input type="text" name="start" placeholder="число от">
+        </div>
+        <div class="form-group">
+        <input type="text" name="end" placeholder="число до">
+        </div>
+        <div class="form-group">
         <select class="form-control" name="type">
             <option value="even">чётные</option>
             <option value="uneven">нечётные</option>
             <option value="all">все</option>
         </select>
-        <input type="submit"value="Вывести числа">
+        </div>
+        <button type="submit" class="btn btn-default">Вывести числа</button>
     </form>
 
 <?php
