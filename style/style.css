@@ -1,5 +1,5 @@
 body {
-    background-color: darkgray;
+    background: url("../img/30.jpg");
 }
 
 .header h1{
@@ -9,12 +9,41 @@ body {
 }
 
 .content{
-    background-color: burlywood;
+    background: url("../img/4.png");
     margin: 10px;
     border-radius: 10px;
 }
 
+.content h3,h2{
+    color: white;
+}
+
 .content p{
     text-align: justify;
+    color: white;
     padding: 10px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#menu a{
+    background: url("../img/54.jpg");
+    color: white;
+    display: block;
+    width: 150px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    transition-duration: 2s;
+    margin-left: 30px;
+    padding-left: 30px;
+    background: url("../img/71.jpg");
 }
