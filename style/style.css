@@ -1,13 +1,58 @@
 body {
+    margin: 0;
+    padding: 0;
     background: url("../img/30.jpg");
 }
 
-.header h1{
+#header{
+    background: url("../img/186.jpg");
     text-align: center;
-    font-weight: bold;
-    font-style: italic;
+    margin: 10px;
+    border-radius: 10px;
 }
 
+
+#header img{
+    width: 100%;
+}
+
+#header h1{
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+#menu
+{
+    margin-left: 20px;
+}
+
+
+#menu a{
+    background: url("../img/54.jpg");
+    color: white;
+    display: block;
+    width: 200px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#menu ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu a:hover{
+    transition-duration: 2s;
+    margin-left: 30px;
+    padding-left: 30px;
+    background: url("../img/71.jpg");
+    font-size: x-large;
+}
 .content{
     background: url("../img/4.png");
     margin: 10px;
@@ -26,24 +71,5 @@ body {
     border-radius: 10px;
 }
 
-ul{
-    list-style-type: none;
-}
 
-#menu a{
-    background: url("../img/54.jpg");
-    color: white;
-    display: block;
-    width: 150px;
-    margin-bottom: 5px;
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-}
 
-#menu a:hover{
-    transition-duration: 2s;
-    margin-left: 30px;
-    padding-left: 30px;
-    background: url("../img/71.jpg");
-}
