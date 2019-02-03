@@ -57,6 +57,7 @@ body {
     background: url("../img/4.png");
     margin: 10px;
     border-radius: 10px;
+    color: white;
 }
 
 .content h3,h2{
@@ -70,6 +71,28 @@ body {
     background-color: green;
     border-radius: 10px;
 }
+
+.content table
+{
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+    margin: 20px;
+}
+
+.content table td
+{
+    padding: 10px;
+    border: 1px solid;
+}
+
+.pifagor
+{
+    background-color: yellow;
+    color: red;
+    border: white;
+}
+
 
 
 
