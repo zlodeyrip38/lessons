@@ -1,13 +1,13 @@
 <?php
 
-function login($data)
+function login($post)
 {
   require_once "users.php";
-  foreach ($users as $user)
+  foreach ($users as $v)
   {
-      if($data['login']==$user['login'] AND $data['pass']==$user['password'])
+      if($post['login']==$v['login'] AND $post['pass']==$v['password'])
       {
-        $authorized = $user['name'];
+        $authorized = $v['name'];
       }
   }
   
