@@ -1,6 +1,7 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     background: url("../img/30.jpg");
 }
 
@@ -10,7 +11,6 @@ body {
     margin: 10px;
     border-radius: 10px;
 }
-
 
 #header img{
     width: 100%;
@@ -27,6 +27,12 @@ body {
     margin-left: 20px;
 }
 
+#menu ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 #menu a{
     background: url("../img/54.jpg");
@@ -39,13 +45,6 @@ body {
     text-decoration: none;
 }
 
-#menu ul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 #menu a:hover{
     transition-duration: 2s;
     margin-left: 30px;
@@ -53,6 +52,7 @@ body {
     background: url("../img/71.jpg");
     font-size: x-large;
 }
+
 .content{
     background: url("../img/4.png");
     margin: 10px;
@@ -91,8 +91,6 @@ body {
     background-color: yellow;
     color: red;
     border: white;
+    width: 40px;
+    text-align: center;
 }
-
-
-
-

@@ -10,39 +10,7 @@ require_once "header.php";
 </form>
 
 <?php
-echo "<table>";
-
-    for ($i=1;$i<=$_POST['tr'];$i++)
-    {
-
-        echo "<tr>";
-            if($i==1)
-            {
-                for ($j=1;$j<=$_POST['td'];$j++)
-                {
-                    echo "<td class='pifagor'>{$j}</td>";
-                }
-            }
-            else
-            {
-                for ($j=1;$j<=$_POST['td'];$j++)
-                {
-                    if ($j==1)
-                    {
-                        echo "<td class='pifagor'>";
-                    }
-                    else
-                    {
-                        echo "<td>";
-                    }
-                    echo $j*$i."</td>";
-                }
-            }
-        echo "</tr>";
-    }
-
-
-echo "</table>\n";
+pifagor($_POST['tr'],$_POST['td']);
 
 
 require_once "footer.php";
