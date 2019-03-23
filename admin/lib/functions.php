@@ -15,24 +15,24 @@ function db($sql)
 function login($post)
 {
     $sql =  "SELECT name, surname FROM user WHERE login='{$post['login']}' AND password='{$post['pass']}'";
-    echo $sql;
-    $result = db($sql);
 
-/*    foreach ($users as $v)
+    if($result = db($sql))
     {
-        if(==$v['login'] AND $post['pass']==$v['password'])
+        $user = mysqli_fetch_assoc($result);
+        if(!empty($user))
         {
-            $authorized = $v['name'];
+            $_SESSION['authorized'] = $user['name']." ".$user['surname']." | <a href='?page=exit'>выход</a>";
         }
+
     }
 
-    if($authorized)
+    if($_SESSION['authorized'])
     {
-        echo "Добро пожаловать на сайт, ".$authorized;
+        echo "Добро пожаловать на сайт";
     }
     else
     {
         echo "Неправильные логин или пароль";
-    }*/
+    }
 
 }
