@@ -1,9 +1,6 @@
 <?php
-if($_SESSION['authorized'])
-{
-    echo $_SESSION['authorized'];
-}
-else
+if(!$_SESSION['authorized'])
+
 {
     if($_POST)
     {
@@ -14,8 +11,6 @@ else
         require_once "login_form.php";
     }
 
-
-
 }
 
 if ($_GET)
@@ -24,6 +19,11 @@ if ($_GET)
     {
         case "exit":
             unset($_SESSION['authorized']);
+            header('Refresh: 0; URL=index.php');
+            break;
+        case "pageslist":
+            $menu = pagesList();
+            var_dump($menu);
             break;
     }
 }

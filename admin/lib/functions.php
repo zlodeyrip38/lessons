@@ -21,7 +21,7 @@ function login($post)
         $user = mysqli_fetch_assoc($result);
         if(!empty($user))
         {
-            $_SESSION['authorized'] = $user['name']." ".$user['surname']." | <a href='?page=exit'>выход</a>";
+            $_SESSION['authorized'] = $user['name']." ".$user['surname'];
         }
 
     }
@@ -29,10 +29,24 @@ function login($post)
     if($_SESSION['authorized'])
     {
         echo "Добро пожаловать на сайт";
+        header('Refresh: 1; URL=index.php');
     }
     else
     {
         echo "Неправильные логин или пароль";
+        header('Refresh: 1; URL=index.php');
     }
 
+}
+
+function pagesList ()
+{
+    $sql="SELECT id, menu_name, created, updated FROM pages";
+ $pages = db($sql);
+ while ($menu = mysqli_fetch_assoc($pages))
+ {
+     $menus[] = $menu;
+ }
+
+ return $menus;
 }
