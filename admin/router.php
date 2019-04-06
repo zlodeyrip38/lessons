@@ -22,8 +22,7 @@ if ($_GET)
             header('Refresh: 0; URL=index.php');
             break;
         case "pageslist":
-            $menu = pagesList();
-            var_dump($menu);
+            require_once "views/VPagesList.php";
             break;
     }
 }
