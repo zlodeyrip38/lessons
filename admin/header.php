@@ -28,7 +28,7 @@ require_once "lib/functions.php";
 <body class="text-center">
 
 <?php if($_SESSION['authorized'])
-    {?>
+{?>
 
         <div id="header" class="row">
             <div class="col-md-2">
@@ -52,4 +52,8 @@ require_once "lib/functions.php";
             </div>
         </div>
 <?php
-    }
+}
+else
+{
+        require_once  "router.php";
+}

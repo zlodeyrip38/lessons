@@ -1,6 +1,5 @@
 <?php
 if(!$_SESSION['authorized'])
-
 {
     if($_POST)
     {
@@ -24,6 +23,10 @@ if ($_GET)
         case "pageslist":
             require_once "views/VPagesList.php";
             break;
+        case "pageedit":
+            require_once "views/VPageEdit.php";
+            break;
+
     }
 }
 
