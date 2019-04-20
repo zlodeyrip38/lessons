@@ -42,11 +42,38 @@ function login($post)
 function pagesList ()
 {
     $sql="SELECT id, menu_name, created, updated FROM pages";
- $pages = db($sql);
- while ($menu = mysqli_fetch_assoc($pages))
- {
-     $menus[] = $menu;
- }
+    $pages = db($sql);
+    while ($menu = mysqli_fetch_assoc($pages))
+    {
+        $menus[] = $menu;
+    }
 
- return $menus;
+    return $menus;
+}
+
+function dataForPageEdit ($id)
+{
+    $sql="SELECT id, content, menu_name FROM pages WHERE id='{$id}'";
+    $page = db($sql);
+    $one_page = mysqli_fetch_assoc($page);
+    return $one_page;
+}
+
+function saveDataForPage($post,$id)
+{
+    $date = time();
+    $sql = "UPDATE pages SET menu_name='{$post['menu_name']}', content='{$post['content']}', updated = '{$date}' WHERE id='{$id}'";
+    $page = db($sql);
+    $one_page = mysqli_fetch_assoc($page);
+    return $one_page;
+}
+
+function addNewPage($post)
+{
+    $date = time();
+    $sql = "INSERT INTO pages (menu_name, content, created) VALUES ('{$post['menu_name']}','{$post['content']}','{$date}')";
+    if ($page = db($sql))
+    {
+        echo "Новая станица была успешно добавлена";
+    }
 }

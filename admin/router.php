@@ -12,6 +12,21 @@ if(!$_SESSION['authorized'])
 
 }
 
+
+if ($_POST)
+{
+    switch ($_GET['page'])
+    {
+        case "pageedit":
+            saveDataForPage($_POST,$_GET['id']);
+            break;
+        case "pageadd":
+            addNewPage($_POST);
+            break;
+
+    }
+}
+
 if ($_GET)
 {
     switch ($_GET['page'])
@@ -26,8 +41,14 @@ if ($_GET)
         case "pageedit":
             require_once "views/VPageEdit.php";
             break;
+        case "pageadd":
+            require_once "views/VPageAdd.php";
+            break;
+
 
     }
 }
+
+
 
 require_once "footer.php";
