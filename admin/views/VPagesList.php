@@ -12,7 +12,7 @@ foreach ($menu as $page)
                 <a href='?page=pageedit&id=<?=$page['id']?>'>редактировать</a>
             </div>
             <div class="col-md">
-                удалить
+                <a href='?page=pagedelete&id=<?=$page['id']?>'>удалить</a>
             </div>
         </div>
     </div>

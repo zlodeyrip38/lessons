@@ -6,7 +6,6 @@ html, body {
 }
 
 #header{
-    background: url("../img/186.jpg");
     text-align: center;
     margin: 10px;
     border-radius: 10px;
@@ -47,14 +46,13 @@ html, body {
 
 #menu a:hover{
     transition-duration: 2s;
-    margin-left: 30px;
-    padding-left: 30px;
-    background: url("../img/71.jpg");
-    font-size: x-large;
+    margin-left: 5px;
+    padding-left: 5px;
+    font-size: large;
 }
 
 .content{
-    background: url("../img/4.png");
+    background-color: gray;
     margin: 10px;
     border-radius: 10px;
     color: white;
@@ -66,9 +64,9 @@ html, body {
 
 .content p{
     text-align: justify;
-    color: white;
-    padding: 10px;
-    background-color: green;
+    color:white;
+
+    background:url("../img/61.png");
     border-radius: 10px;
 }
 
@@ -82,8 +80,40 @@ html, body {
 
 .content table td
 {
-    padding: 10px;
+
     border: 1px solid;
+}
+
+#article
+{
+    color: whitesmoke;
+    background:url("../img/61.png");
+    margin-bottom: 10px;
+}
+
+#article .col-md-4
+{
+    padding: 0;
+}
+
+#article a
+{
+    background:url("../img/51.png");
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px 15px;
+}
+
+.article_date
+{
+    margin-left: 15px;
+}
+
+.article_page_text
+{
+    background-color: white;
+    padding-top: 1%;
 }
 
 .pifagor

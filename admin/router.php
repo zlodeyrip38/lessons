@@ -23,6 +23,9 @@ if ($_POST)
         case "pageadd":
             addNewPage($_POST);
             break;
+        case "articleadd":
+            addArticle($_POST);
+            break;
 
     }
 }
@@ -44,8 +47,16 @@ if ($_GET)
         case "pageadd":
             require_once "views/VPageAdd.php";
             break;
-
-
+        case "pagedelete":
+            deletePage($_GET['id']);
+            break;
+        case "bloglist":
+            require_once "views/VArticlesList.php";
+            break;
+        case "articleadd":
+             require_once "views/VArticleAdd.php";
+            break;
+    
     }
 }
 

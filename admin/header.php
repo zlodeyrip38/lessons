@@ -46,7 +46,8 @@ require_once "lib/functions.php";
                 <?=$_SESSION['authorized']?>
                 <a href='?page=pageslist'>список страниц</a>
                 <a href='?page=pageadd'>дабавить страницу</a>
- |              <a href='?page=exit'>выход</a>
+                <a href='?page=bloglist'>блог</a>
+                <a href='?page=exit'>выход</a>
             </div>
             <div class="col-md-9 content">
                 <?require_once  "router.php";?>

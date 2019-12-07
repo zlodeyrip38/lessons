@@ -74,6 +74,27 @@ function addNewPage($post)
     $sql = "INSERT INTO pages (menu_name, content, created) VALUES ('{$post['menu_name']}','{$post['content']}','{$date}')";
     if ($page = db($sql))
     {
-        echo "Новая станица была успешно добавлена";
+        echo "Новая страница была успешно добавлена";
+    }
+}
+
+
+function deletePage($id)
+{
+    $sql = "DELETE FROM pages WHERE id='{$id}'";
+    if (db($sql))
+    {
+        echo "Страница была успешно удалена";
+    }
+
+}
+
+function addArticle($post)
+{
+    $date = time();
+    $sql = "INSERT INTO blog (name, content, created) VALUES ('{$post['name']}','{$post['content']}','{$date}')";
+    if ($page = db($sql))
+    {
+        echo "Статья была усешно создана";
     }
 }
