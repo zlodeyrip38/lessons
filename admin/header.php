@@ -47,6 +47,7 @@ require_once "lib/functions.php";
                     <li><a href='?page=pageslist'>список страниц</a></li>
                     <li><a href='?page=pageadd'>дабавить страницу</a></li>
                     <li><a href='?page=bloglist'>блог</a></li>
+                    <li><a href="http://localhost/denes/index.php" target="_blank">на сайт</a> </li>
                 </ul>
             </div>
             <div class="col-md-9 content">
