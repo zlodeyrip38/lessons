@@ -7,6 +7,6 @@ echo "Редактирование страницы ".$page['menu_name'];
     Названние страницы в меню
     <input type="text" name="menu_name" value="<?=$page['menu_name']?>">
     Контент
-    <input type="text" name="content" value="<?=$page['content']?>">
+    </textarea><name="content" value="<?=$page['content']?>"><textarea
     <input type="submit" value="Сохранить">
 </form>

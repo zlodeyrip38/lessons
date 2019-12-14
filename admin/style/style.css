@@ -3,32 +3,42 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: url("../../img/30.jpg");
+    background: lightgrey;
+}
+
+a
+{
+    color: white;
 }
 
 
-#header{
+#header
+{
     text-align: center;
     margin: 10px;
     border-radius: 10px;
 }
 
-#header img{
+#header img
+{
     width: 100%;
 }
 
 #header h1{
     font-weight: bold;
     font-style: italic;
-    color: white;
+    color: black;
     text-align: center;
     font-size: large;
 }
 
 #menu
 {
-    margin-left: 20px;
-    border-radius: 10px ;
+    margin: 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+    text-align: left;
+    background: gray;
 }
 
 #menu ul
@@ -39,28 +49,15 @@ body {
 }
 
 #menu a{
-    background: url("../../img/54.jpg");
-    color: white;
-    display: block;
-    width: 200px;
     margin-bottom: 5px;
-    padding: 10px;
-    border-radius: 10px;
+    margin-right: 5px;
     text-decoration: none;
 }
 
-
-
-#menu a:hover{
-    transition-duration: 2s;
-    margin-left: 5px;
-    padding-left: 5px;
-    font-size: large;
-}
-
 .content{
-    background: url("../../img/61.png");
-    margin: 10px;
+    background: gray;
+    margin: 20px;
+    margin-top: 0px;
     border-radius: 10px;
     color: white;
 }
