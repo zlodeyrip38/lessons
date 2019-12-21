@@ -32,13 +32,21 @@ a
     font-size: large;
 }
 
+.header
+{
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px  black solid;
+}
+
 #menu
 {
     margin: 20px;
     margin-top: 0px;
     border-radius: 10px;
     text-align: left;
-    background: gray;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
 }
 
 #menu ul
@@ -52,6 +60,11 @@ a
     margin-bottom: 5px;
     margin-right: 5px;
     text-decoration: none;
+    color: black;
+ }
+
+#menu a:hover{
+    color: navy;
 }
 
 .content{
@@ -60,6 +73,7 @@ a
     margin-top: 0px;
     border-radius: 10px;
     color: white;
+    text-align: left;
 }
 
 .content h3,h2{
